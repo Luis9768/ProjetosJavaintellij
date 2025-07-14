@@ -10,15 +10,16 @@ public class Main {
             int => 32 bits =>
             
             */
-        byte b = 100;
+        /*byte b = 100;
         short s = 10000;
         int i = 100000;
         long l = 100000L;
         float f = 10.5f;
         double d = 20.5;
         char c = 'A';
+        boolean bool = false;*/
         String str = "Luis";
-        boolean bool = false;
+
 
         //VETORES
         int[] colecaoDeinteiros = {1,2,3,4,5};// vetor qu epode ser criado por qualquer variavel primitiva(int, float etc) {se vc usa chaves ja vem com o tanto de elementos dentro dele predefinido tipo {1,2,3...}}
