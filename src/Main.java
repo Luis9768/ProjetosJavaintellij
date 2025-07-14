@@ -31,7 +31,7 @@ public class Main {
         System.out.println(nomesdaLista[3]);
         System.out.println(nomesdaLista[7]);
 
-        int []meusNUmeros = new int[40];//nesse tipo de vetor vc não precisa necessariamente preencher com os elementos, vc simplesmente define o valor  ex [40] esse vetor tem o tamanho de 40 entao 40 é o valor que ele vai possuir sem falar as posicoes dos elementos
+        //int []meusNUmeros = new int[40];//nesse tipo de vetor vc não precisa necessariamente preencher com os elementos, vc simplesmente define o valor  ex [40] esse vetor tem o tamanho de 40 entao 40 é o valor que ele vai possuir sem falar as posicoes dos elementos
 
         //ARRAY
         ArrayList<String> nomes = new ArrayList<>();// permite que vc adicione ou remova elementos de forma dinamica sem necessariamente declarar o tamanho dela e vc pode ir alterando o tamanho dela a sua vontade
@@ -59,8 +59,9 @@ public class Main {
 
         if (str.isBlank()){
             System.out.println("Vdd");
-        } else if (str == "Luis") {
-            System.out.println(d);        } else {
+        //} else if (str.equals("Luis")) {
+            System.out.println(d);        }
+        else {
             System.out.println("NO erro boy");
         }
         System.out.println(colecaoDeinteiros[2]);
