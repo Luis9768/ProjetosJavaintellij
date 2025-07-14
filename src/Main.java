@@ -1,75 +1,75 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String [] args){
-        //Variaveis do JAVA
-        /*byte => 8 bits =>-128 a 127
-            short => 16 bits => -32.768 a 32.767
-            int => 32 bits =>
-            
-            */
-        /*byte b = 100;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // 🟡 Variáveis primitivas (exemplos comentados)
+        /*
+        byte b = 100;
         short s = 10000;
         int i = 100000;
         long l = 100000L;
         float f = 10.5f;
         char c = 'A';
-        boolean bool = false;*/
-        String str = "Luis";
+        boolean bool = false;
+        */
+
+        // 🔡 String e número
+        String str;
         double d = 20.5;
 
-        //VETORES
-        int[] colecaoDeinteiros = {1,2,3,4,5};// vetor qu epode ser criado por qualquer variavel primitiva(int, float etc) {se vc usa chaves ja vem com o tanto de elementos dentro dele predefinido tipo {1,2,3...}}
-        String[] nomesdaLista = new String[8];
-        nomesdaLista[0] = "Boa noite mãe ";
-        nomesdaLista[3]= "tudo bem com a senhora?";
-        nomesdaLista[7] = "Vai dormir dona Rita";
-        System.out.print(nomesdaLista[0]);
-        System.out.println(nomesdaLista[3]);
-        System.out.println(nomesdaLista[7]);
+        // 🔢 Vetor de inteiros
+        int[] colecaoDeInteiros = {1, 2, 3, 4, 5};
 
-        //int []meusNUmeros = new int[40];//nesse tipo de vetor vc não precisa necessariamente preencher com os elementos, vc simplesmente define o valor  ex [40] esse vetor tem o tamanho de 40 entao 40 é o valor que ele vai possuir sem falar as posicoes dos elementos
+        // 🔤 Vetor de Strings (fixo)
+        String[] nomesDaLista = new String[8];
+        nomesDaLista[0] = "Boa noite mãe";
+        nomesDaLista[3] = "Tudo bem com a senhora?";
+        nomesDaLista[7] = "Vai dormir dona Rita";
 
-        //ARRAY
-        ArrayList<String> nomes = new ArrayList<>();// permite que vc adicione ou remova elementos de forma dinamica sem necessariamente declarar o tamanho dela e vc pode ir alterando o tamanho dela a sua vontade
-        //POSICOES DO ARRAY
-        nomes.add("Rafaela");//0
-        nomes.add("Joao");//1
-        nomes.add("Miguel");//2
-        nomes.add("Juana");//3
-        nomes.add("Natan");//4
-        nomes.add("Caio");//5
-        nomes.add("Erika");//6
-        nomes.add("Bruna");//7
-        nomes.add("Luana");//8
-        System.out.println(nomes.get(4));//como printar um array
-        //COMO REMOVER UM ARRAY
-        nomes.remove(4);// se eu removo o indice 4 que é o Natan o indice 4 passa a ser o Caio
-        System.out.println(nomes.get(4));//como printar um array
-        System.out.println(nomes.get(6));//como printar um array
-        nomes.remove("Erika");//vc tambem pode remover por objeto
-        System.out.println(nomes.get(6));//como printar um array
+        System.out.println(nomesDaLista[0]);
+        System.out.println(nomesDaLista[3]);
+        System.out.println(nomesDaLista[7]);
 
+        // 📋 ArrayList dinâmico
+        ArrayList<String> nomes = new ArrayList<>();
+        nomes.add("Rafaela");
+        nomes.add("Joao");
+        nomes.add("Miguel");
+        nomes.add("Juana");
+        nomes.add("Natan");
+        nomes.add("Caio");
+        nomes.add("Erika");
+        nomes.add("Bruna");
+        nomes.add("Luana");
 
+        // 🔍 Visualizando e removendo elementos do ArrayList
+        System.out.println("Antes de remover: " + nomes.get(4)); // Natan
+        nomes.remove(4); // remove "Natan"
+        System.out.println("Depois de remover Natan: " + nomes.get(4)); // agora é "Caio"
 
-        //CONDICIONAIS
+        nomes.remove("Erika"); // remove pelo nome
+        System.out.println("Depois de remover Erika: " + nomes.get(6)); // agora é "Luana"
+
+        // 🧠 Entrada do usuário para condicional
+        System.out.print("Digite algo: ");
+        str = sc.nextLine();
 
         if (str.equals("gostoso")) {
             System.out.println("Vdd");
-}/* else if (str.equals("Luis")) {
-            System.out.println(d);
-        } */
-        else {
+        } else if (str.equals("Luis")) {
+            System.out.println("Você digitou Luis");
+        } else {
             System.out.println("NO erro boy");
         }
 
-        System.out.println(colecaoDeinteiros[2]);
-        System.out.println(colecaoDeinteiros.length);
+        // 🔚 Imprimindo dados finais
+        System.out.println("Terceiro valor do vetor: " + colecaoDeInteiros[2]);
+        System.out.println("Tamanho do vetor: " + colecaoDeInteiros.length);
+        System.out.println("Valor de d: " + d);
 
-
+        sc.close();
     }
-
-
 }
