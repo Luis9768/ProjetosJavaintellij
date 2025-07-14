@@ -15,10 +15,11 @@ public class Main {
         int i = 100000;
         long l = 100000L;
         float f = 10.5f;
-        double d = 20.5;
         char c = 'A';
         boolean bool = false;*/
         String str = "Luis";
+        double d = 20.5;
+
 
 
         //VETORES
