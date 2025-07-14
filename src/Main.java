@@ -20,8 +20,6 @@ public class Main {
         String str = "Luis";
         double d = 20.5;
 
-
-
         //VETORES
         int[] colecaoDeinteiros = {1,2,3,4,5};// vetor qu epode ser criado por qualquer variavel primitiva(int, float etc) {se vc usa chaves ja vem com o tanto de elementos dentro dele predefinido tipo {1,2,3...}}
         String[] nomesdaLista = new String[8];
@@ -58,7 +56,7 @@ public class Main {
 
         //CONDICIONAIS
 
-        if (str.isBlank()){
+        if (str =="Luis"){
             System.out.println("Vdd");
         //} else if (str.equals("Luis")) {
             System.out.println(d);        }
