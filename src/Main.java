@@ -56,11 +56,12 @@ public class Main {
 
         //CONDICIONAIS
 
-        if (str.equals("ola")) {
+        if (str.equals("gostoso")) {
             System.out.println("Vdd");
-//} else if (str.equals("Luis")) {
+}/* else if (str.equals("Luis")) {
             System.out.println(d);
-        } else {
+        } */
+        else {
             System.out.println("NO erro boy");
         }
 
