@@ -56,7 +56,7 @@ public class Main {
 
         //CONDICIONAIS
 
-        if (str.equals("Luis")){
+        if (str.equals("ola")){
             System.out.println("Vdd");
         //} else if (str.equals("Luis")) {
             System.out.println(d);        }
