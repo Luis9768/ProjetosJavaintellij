@@ -56,15 +56,17 @@ public class Main {
 
         //CONDICIONAIS
 
-        if (str.equals("ola")){
+        if (str.equals("ola")) {
             System.out.println("Vdd");
-        //} else if (str.equals("Luis")) {
-            System.out.println(d);        }
-        else {
+//} else if (str.equals("Luis")) {
+            System.out.println(d);
+        } else {
             System.out.println("NO erro boy");
         }
+
         System.out.println(colecaoDeinteiros[2]);
         System.out.println(colecaoDeinteiros.length);
+
 
     }
 
